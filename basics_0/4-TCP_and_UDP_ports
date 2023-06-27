@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#The command netstat shoys information about the network connections.
+#The -0 option displays the PID of the process using the connection.
+netstat -0

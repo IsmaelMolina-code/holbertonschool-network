@@ -2,8 +2,9 @@
 #The command ping is used to check the availability of a host.
 #The -z option is used to check if the string is empty.
 #The -c option is used to specify the number of packets to send.
+script_name=$(basename "$0")
 if [ -z "$1" ]; then
-    echo "Usage: $0 {IP_ADDRESS}"
+    echo "Usage: $script_name {IP_ADDRESS}"
 else
     ping -c 5 "$1"
 fi
